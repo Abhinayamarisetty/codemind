@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b;
+	cin>>a;
+	cin>>b;
+	int suma=0,sumb=0;
+	for(int i=1;i<a;i++)
+	{
+		if(a%i==0)
+		{
+			suma=suma+i;
+		}
+	}
+	for(int j=1;j<b;j++)
+	{
+		if(b%j==0)
+		{
+			sumb=sumb+j;
+		}
+	}
+	if(a==sumb && b==suma)
+	cout<<"Amicable";
+	else
+	cout<<"Not Amicable";
+}
