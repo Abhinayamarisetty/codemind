@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	vector<int>vec(10,0);
+	int n,r,c=0;
+	cin>>n;
+	while(n>0)
+	{
+		r=n%10;
+		vec[r]=vec[r]+1;
+	  if(vec[r]>1)
+		{
+			cout<<"Not Unique Number";
+			c=1;
+			break;
+		}
+		n=n/10;
+		
+	}
+	if(c==0)
+	cout<<"Unique Number ";
+
+}
